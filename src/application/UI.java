@@ -43,7 +43,7 @@ public class UI {
 		
 		return new ChessPosition(column, row);
 		}catch(RuntimeException e) {
-			throw new InputMismatchException("Erro ao ler a posição: Valores validos vao de a1 ate h8");
+			throw new InputMismatchException("Erro ao ler a posicao: Valores validos vao de a1 ate h8");
 		}
 	}
 	
