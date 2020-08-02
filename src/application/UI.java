@@ -93,6 +93,12 @@ public class UI {
 		printCapturedPieces(captured);
 		System.out.println("\nTurno: " + chessMatch.getTurn());
 		System.out.println("Aguardando jogador: " + chessMatch.getCurrentPlayer());
+		
+		if(chessMatch.getCheck()) {
+			System.out.print(ANSI_RED);
+			System.out.println("CHECK!");
+			System.out.print(ANSI_RESET);
+		}
 	}
 
 	private static void printCapturedPieces(List<ChessPiece> captured) {
